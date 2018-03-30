@@ -1,0 +1,266 @@
+body p,
+body li {
+  font-size: 12pt;
+  line-height: 22px;
+}
+
+table p {
+  font-size: 10pt;
+  margin: 0;
+}
+
+h1.title {
+  font-size: 4em;
+  text-align: center;
+  margin:auto;
+  text-decoration: underline;
+}
+
+h2.subtitle {
+  font-size: 2.0em;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 3em;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 0.7em;
+}
+
+h2 {
+  font-size: 2.0em;
+  margin-bottom: 0.6em;
+}
+
+h3 {
+  font-size: 1.6em;
+  margin-bottom: 0.5em;
+}
+
+h4 {
+  font-size: 1.2em;
+  margin-bottom: 0.4em;
+}
+
+h5 {
+  font-size: 1.1em;
+  margin-bottom: 0.3em;
+}
+
+h6 {
+  font-size: 1.0em;
+  margin-bottom: 0.2em;
+}
+
+div#table-of-contents {
+  background-color: #E0E0E0;
+  display: inline-block;
+  padding: 4px;
+  border: 2px solid #000000;
+  font-size: 1.2em;
+  margin: 2em;
+  float: right;
+}
+
+div#table-of-contents a.reference.internal {
+  text-decoration: none;
+  color: #202020;
+}
+div#table-of-contents a.reference.internal:visited {
+  text-decoration: none;
+  /*color: #FFFFFF;*/
+}
+
+div#table-of-contents p.topic-title {
+  font-size: 2em;
+  margin: 4px;
+}
+
+div#table-of-contents p {
+  text-align: left;
+  line-height: 1.2em;
+}
+
+div#table-of-contents ul {
+  margin-left: -1.0em;
+  list-style-type: none;
+}
+/*
+div#table-of-contents ul ul {
+  margin-left: -1.6em;
+}
+
+div#table-of-contents ul ul ul {
+  margin-left: -1.2em;
+}
+
+div#table-of-contents ul ul ul ul {
+  margin-left: -0.8em;
+}
+
+div#table-of-contents ul ul ul ul ul {
+  margin-left: -0.4em;
+}
+
+div#table-of-contents ul ul ul ul ul ul {
+  margin-left: -0.0em;
+}
+*/
+p {
+  text-align: justify;
+  max-width: 90%;
+}
+
+a.toc-backref {
+  text-decoration: none;
+  color: #000000;
+}
+a.toc-backref:visited,
+a.toc-backref:hover {
+  color: #444444;
+}
+
+#table-of-contents ul {
+  margin-left: 0em;
+}
+
+#table-of-contents ul ul {
+  margin-left: -2.5em;
+}
+
+#table-of-contents ul ul ul {
+  margin-left: -2.0em;
+}
+
+#table-of-contents ul ul ul ul {
+  margin-left: -1.5em;
+}
+
+#table-of-contents ul ul ul ul ul {
+  margin-left: -1.0em;
+}
+
+#table-of-contents ul ul ul ul ul ul {
+  margin-left: -0.5em;
+}
+
+#table-of-contents ol {
+  margin-left: 0em;
+}
+
+#table-of-contents ol ol {
+  margin-left: -2.5em;
+}
+
+#table-of-contents ol ol ol {
+  margin-left: -2.0em;
+}
+
+#table-of-contents ol ol ol ol {
+  margin-left: -1.5em;
+}
+
+#table-of-contents ol ol ol ol ol {
+  margin-left: -1.0em;
+}
+
+#table-of-contents ol ol ol ol ol ol {
+  margin-left: -0.5em;
+}
+
+
+blockquote {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 36px;
+  border: 1px solid #cccccc;
+  border-left: 6px solid #cccccc;
+  background-color: #f9f9f9;
+  max-width: 64em;
+  text-align: justify;
+  /*border-radius: 5px 5px 5px 5px;*/
+  padding: 0 0.8em 0 0.8em;
+  /*padding-top: 0.2em;
+  padding-bottom: 0.2em;*/
+}
+
+blockquote p {
+  font-style: italic;
+  color: #606060;
+}
+
+/*
+for literals
+*/
+tt.docutils.literal {
+  border-radius: 3px 3px 3px 3px;
+  background-color: #F8F8F8;
+  color: #FF4040;
+  padding: 2px;
+  font-size: 0.8em;
+}
+
+/*p tt.docutils.literal {
+  font-size: 12pt;
+}*/
+
+/*
+for definition lists
+*/
+dt {
+	font-weight: bold;
+	font-size: 12pt;
+}
+
+dd {
+	font-size: 12pt;
+}
+
+/*
+docutils only outputs paragraphs if there is more than one paragraphs in the rst source.
+This causes the text to be inline if only one paragraph exists, but block, if multiple paragraphs exist in the rst source. To make both cases look equal, the first html paragraph needs to be displayed inline.
+*/
+dd p:first-of-type {
+	display: inline;
+}
+
+table {
+  border: none;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.4em;
+  border-top-color: #606060;
+  border-bottom-color: #606060;
+  border-left-color: #C0C0C0;
+  border-right-color: #C0C0C0;
+}
+
+th:first-child {
+  border-right-color: #C0C0C0;
+  border-left-color: #606060;
+}
+td:first-child {
+  border-right-color: #C0C0C0;
+  border-left-color: #606060;
+}
+
+th:last-child {
+  border-left-color: #C0C0C0;
+  border-right-color: #606060;
+}
+td:last-child {
+  border-left-color: #C0C0C0;
+  border-right-color: #606060;
+}
+
+tr:nth-child(even) {
+  background-color: #F0F0F0;
+}
+
+tr:nth-child(odd) {
+  background-color: #FCFCFC;
+}

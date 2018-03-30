@@ -1,0 +1,59 @@
+.codehilitetable {
+    border-spacing:0; /* Removes the cell spacing via CSS */
+    border-collapse: collapse;
+}
+
+.codehilitetable .linenos {
+	border: none;
+    padding: 0;
+}
+.codehilitetable .code {
+	border: none;
+    padding: 0;
+}
+
+.codehilitetable td,
+.codehilitetable tr,
+.codehilitetable div
+{
+    border: none;
+}
+
+.linenodiv > pre > .special {
+	font-weight: bold;
+}
+
+.codehilite {
+    padding: 2px;
+    background-color: #F0F0F0;
+	font-size: 12px;
+	line-height: 1.2em;
+    border: none;
+}
+
+.linenodiv {
+    padding: 2px;
+    background-color: #F0F0F0;
+	font-size: 12px;
+	line-height: 1.2em;
+    border: none;
+}
+
+.linenodiv > pre {
+    padding: 2px;
+    margin: 0;
+	font-size: 12px;
+    background-color: #F0F0F0;
+}
+
+.codehilite > pre {
+    padding: 2px;
+    margin: 0;
+	font-size: 12px;
+	line-height: 1.2em;
+}
+
+.codehilitetable a {
+    text-decoration: none;
+    color: #999999;
+}

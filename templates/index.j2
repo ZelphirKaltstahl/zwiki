@@ -1,0 +1,7 @@
+{% from "pages_list_macro.j2" import pages_list with context %}
+{% extends "base.j2" %}
+
+{% block content %}
+    <p>This index page lists all pages available in this Zwiki.</p>
+    {{ pages_list('Pages', links, False) }}
+{% endblock %}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>{% block title %}{% endblock %}</title>
+
+		<!-- underscore -->
+        <!-- <script type="text/javascript" src="{{ url_for('static', filename='js/underscore-min.js') }}"></script> -->
+
+		<!-- my stylesheets -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/general.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/theme/default.css') }}">
+
+        {% block special_imports %}{% endblock %}  <!-- for example mathjax on wiki pages -->
+	</head>
+	<body>
+		{% include 'header.j2' %}
+
+		<section class="content-area">
+			{% block content %}{% endblock %}
+		</section>
+
+		{% include 'footer.j2' %}
+	</body>
+</html>

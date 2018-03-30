@@ -1,0 +1,21 @@
+{% macro pages_list(title, links, ordered) -%}
+	{% if title %}
+		<p class="{{ tittle }}"></p>
+	{% endif%}
+
+    {% if ordered %}
+		<ol>
+	{% else%}
+		<ul>
+	{% endif %}
+
+	{% for link in links %}
+		<li><a href="{{ link.target }}">{{ link.label }}</a></li>
+	{% endfor %}
+
+    {% if ordered %}
+		</ol>
+	{% else%}
+		</ul>
+	{% endif %}
+{%- endmacro %}
